@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desvania Nur Asyifa - Profil Pribadi & Calon Dokter</title>
+  <meta name="description" content="Web Profil Resmi Desvania Nur Asyifa - Siswa SMAN 1 Cimalaka, Calon Dokter Masa Depan, Pecinta Buku, Coding, dan Matematika.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Subtle Animated Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <div class="logo-icon">
+          <i data-lucide="stethoscope"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Desvania</span>
+          <span class="logo-badge">SMAN 1 Cimalaka</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Beranda</a></li>
+          <li><a href="#about" class="nav-link">Tentang Saya</a></li>
+          <li><a href="#hobbies" class="nav-link">Hobi & Minat</a></li>
+          <li><a href="#aspirations" class="nav-link">Cita-Cita</a></li>
+          <li><a href="#interactive" class="nav-link">Zona Interaktif</a></li>
+          <li><a href="#contact" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <span>Hubungi</span>
+          <i data-lucide="arrow-right" class="icon-sm"></i>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <i data-lucide="menu" id="menu-icon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal-up">
+          <div class="status-pill">
+            <span class="pulse-dot"></span>
+            <span>Siswa SMAN 1 Cimalaka • Calon Dokter Masa Depan</span>
+          </div>
+
+          <h1 class="hero-title">
+            Halo, Saya <span class="gradient-text">Desvania Nur Asyifa</span>
+          </h1>
+
+          <div class="typewriter-container">
+            <span class="typewriter-prefix">Fokus & Minat:</span>
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Siswa yang berdedikasi tinggi dari <strong>SMAN 1 Cimalaka</strong> dengan kecintaan mendalam pada dunia <strong>literasi, teknologi coding, dan logika matematika</strong>. Bertekad memadukan empati kemanusiaan serta ketepatan sains untuk mewujudkan cita-cita mulia menjadi seorang <strong>Dokter</strong> yang berdampak bagi sesama.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#aspirations" class="btn btn-primary">
+              <i data-lucide="heart-pulse"></i>
+              <span>Cita-Cita Menjadi Dokter</span>
+            </a>
+            <a href="#interactive" class="btn btn-outline">
+              <i data-lucide="sparkles"></i>
+              <span>Coba Fitur Interaktif</span>
+            </a>
+          </div>
+
+          <div class="hero-badges-strip">
+            <div class="mini-stat">
+              <div class="stat-icon book-bg"><i data-lucide="book-open"></i></div>
+              <div class="stat-info">
+                <span class="stat-val">Membaca</span>
+                <span class="stat-lbl">Wawasan Medis & Sains</span>
+              </div>
+            </div>
+            <div class="mini-stat">
+              <div class="stat-icon code-bg"><i data-lucide="code-2"></i></div>
+              <div class="stat-info">
+                <span class="stat-val">Coding</span>
+                <span class="stat-lbl">Logika & Problem Solving</span>
+              </div>
+            </div>
+            <div class="mini-stat">
+              <div class="stat-icon math-bg"><i data-lucide="binary"></i></div>
+              <div class="stat-info">
+                <span class="stat-val">Matematika</span>
+                <span class="stat-lbl">Ketelitian & Analisis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal-up delay-1">
+          <div class="profile-card-wrapper">
+            <!-- Modern Minimalist Profile Illustration Card -->
+            <div class="profile-card">
+              <div class="profile-avatar-container">
+                <div class="avatar-glow"></div>
+                <div class="avatar-circle">
+                  <div class="avatar-art">
+                    <!-- Clean Vector Illustration -->
+                    <svg viewBox="0 0 200 200" class="avatar-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <!-- Soft background circle -->
+                      <circle cx="100" cy="100" r="90" fill="#f0f7ff" />
+                      <!-- Medical Cross faint watermark -->
+                      <path d="M90 55 H110 V145 H90 Z" fill="#e0effe" />
+                      <path d="M55 90 H145 V110 H55 Z" fill="#e0effe" />
+                      <!-- Hijab / Student Figure -->
+                      <path d="M100 35 C70 35 55 58 55 90 C55 125 70 145 70 160 L130 160 C130 145 145 125 145 90 C145 58 130 35 100 35 Z" fill="#0284c7" />
+                      <!-- Face Inner Curve -->
+                      <path d="M100 55 C82 55 75 70 75 92 C75 112 85 122 100 122 C115 122 125 112 125 92 C125 70 118 55 100 55 Z" fill="#fed7aa" />
+                      <!-- Eyes -->
+                      <circle cx="90" cy="88" r="3.5" fill="#1e293b" />
+                      <circle cx="110" cy="88" r="3.5" fill="#1e293b" />
+                      <path d="M86 82 Q90 80 94 82" stroke="#1e293b" stroke-width="1.5" stroke-linecap="round" />
+                      <path d="M106 82 Q110 80 114 82" stroke="#1e293b" stroke-width="1.5" stroke-linecap="round" />
+                      <!-- Friendly Smile -->
+                      <path d="M93 99 Q100 106 107 99" stroke="#ea580c" stroke-width="2" stroke-linecap="round" />
+                      <!-- Stethoscope on neck -->
+                      <path d="M80 135 C80 155 120 155 120 135" stroke="#38bdf8" stroke-width="3" fill="none" stroke-linecap="round" />
+                      <circle cx="100" cy="155" r="5" fill="#0284c7" />
+                      <!-- Doctor Coat / Uniform Collar -->
+                      <path d="M70 140 L85 160 L100 145 L115 160 L130 140" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="profile-info-block">
+                <h3 class="profile-name">Desvania Nur Asyifa</h3>
+                <p class="profile-school"><i data-lucide="graduation-cap"></i> SMAN 1 Cimalaka</p>
+                <div class="profile-quote">
+                  "Mengabdi dengan hati, menganalisis dengan logika, berinovasi dengan teknologi."
+                </div>
+              </div>
+
+              <!-- Floating Badges on Card -->
+              <div class="floating-badge badge-med float-anim-1">
+                <div class="badge-icon-box med-color"><i data-lucide="stethoscope"></i></div>
+                <div>
+                  <span class="badge-title">Cita-Cita</span>
+                  <span class="badge-sub">Dokter Masa Depan</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-math float-anim-2">
+                <div class="badge-icon-box math-color"><i data-lucide="calculator"></i></div>
+                <div>
+                  <span class="badge-title">Minat Logika</span>
+                  <span class="badge-sub">Matematika & Analisis</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-code float-anim-3">
+                <div class="badge-icon-box code-color"><i data-lucide="terminal"></i></div>
+                <div>
+                  <span class="badge-title">Tech Skill</span>
+                  <span class="badge-sub">Coding & Algorithm</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="section-tag">
+            <i data-lucide="user"></i>
+            <span>Mengenal Lebih Dekat</span>
+          </div>
+          <h2 class="section-title">Tentang <span class="gradient-text">Desvania Nur Asyifa</span></h2>
+          <p class="section-subtitle">
+            Kombinasi unik antara semangat kemanusiaan medis, ketajaman logika matematika, dan ketrampilan teknologi modern.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Personal Highlights -->
+          <div class="about-card main-about-card reveal-up">
+            <div class="card-icon-header">
+              <div class="icon-circle bg-blue-subtle">
+                <i data-lucide="sparkle" class="text-blue"></i>
+              </div>
+              <span class="card-pill">Profil Singkat</span>
+            </div>
+            <h3 class="card-heading">Dedikasi Siswa Menuju Dunia Kedokteran</h3>
+            <p class="card-text">
+              Saya adalah seorang siswi yang saat ini menempuh pendidikan di <strong>SMA Negeri 1 Cimalaka</strong>. Saya memiliki antusiasme yang sangat besar dalam mempelajari bagaimana sains biologis dan penalaran matematis dapat digunakan untuk memecahkan persoalan klinis nyata.
+            </p>
+            <p class="card-text">
+              Bagi saya, belajar bukan sekadar menghafal rumus atau kode, melainkan proses mengasah kepekaan untuk membantu sesama. Menggabungkan <strong>kecintaan membaca</strong>, <strong>ketelitian matematika</strong>, dan <strong>eksplorasi coding</strong> memberikan pondasi yang kokoh untuk persiapan kuliah di Fakultas Kedokteran.
+            </p>
+
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon"><i data-lucide="school"></i></div>
+                <div class="info-content">
+                  <span class="info-label">Asal Sekolah</span>
+                  <span class="info-val">SMAN 1 Cimalaka (Sumedang)</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon"><i data-lucide="heart-pulse"></i></div>
+                <div class="info-content">
+                  <span class="info-label">Tujuan Karir / Cita-Cita</span>
+                  <span class="info-val">Dokter & Pengabdi Kesehatan Masyarakat</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon"><i data-lucide="award"></i></div>
+                <div class="info-content">
+                  <span class="info-label">Nilai Inti</span>
+                  <span class="info-val">Integritas, Disiplin, Empati & Keingintahuan Ilmiah</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Core Pillars -->
+          <div class="about-pillars-grid">
+            <div class="pillar-card reveal-up delay-1">
+              <div class="pillar-icon bg-emerald-subtle">
+                <i data-lucide="heart-handshake" class="text-emerald"></i>
+              </div>
+              <h4 class="pillar-title">Empati & Pengabdian</h4>
+              <p class="pillar-desc">
+                Cita-cita menjadi dokter didasari oleh ketulusan hati untuk merawat, menyembuhkan, dan membawa harapan bagi sesama.
+              </p>
+            </div>
+
+            <div class="pillar-card reveal-up delay-2">
+              <div class="pillar-icon bg-indigo-subtle">
+                <i data-lucide="brain-circuit" class="text-indigo"></i>
+              </div>
+              <h4 class="pillar-title">Logika & Ketepatan</h4>
+              <p class="pillar-desc">
+                Keahlian dalam matematika dan algoritma melatih daya penalaran kritis yang sangat dibutuhkan dalam diagnosis medis.
+              </p>
+            </div>
+
+            <div class="pillar-card reveal-up delay-3">
+              <div class="pillar-icon bg-amber-subtle">
+                <i data-lucide="book-marked" class="text-amber"></i>
+              </div>
+              <h4 class="pillar-title">Belajar Sepanjang Hayat</h4>
+              <p class="pillar-desc">
+                Hobi membaca buku membuka cakrawala ilmu pengetahuan sains, biologi medik, serta perkembangan teknologi kesehatan.
+              </p>
+            </div>
+
+            <div class="pillar-card reveal-up delay-4">
+              <div class="pillar-icon bg-cyan-subtle">
+                <i data-lucide="laptop" class="text-cyan"></i>
+              </div>
+              <h4 class="pillar-title">Adopsi Digital & Coding</h4>
+              <p class="pillar-desc">
+                Memahami dunia coding sebagai bekal menyambut era <em>Smart Healthcare</em>, Rekam Medis Digital, dan AI Kedokteran.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobbies & Passions Section -->
+    <section class="section hobbies-section" id="hobbies">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="section-tag">
+            <i data-lucide="compass"></i>
+            <span>Aktivitas & Minat</span>
+          </div>
+          <h2 class="section-title">Hobi & <span class="gradient-text">Eksplorasi Minat</span></h2>
+          <p class="section-subtitle">
+            Tiga pilar kegemaran yang membentuk cara berpikir analitis, kreatif, dan berwawasan luas.
+          </p>
+        </div>
+
+        <div class="hobbies-grid">
+          <!-- Card 1: Membaca Buku -->
+          <div class="hobby-card tilt-card reveal-up">
+            <div class="hobby-card-inner">
+              <div class="hobby-icon-wrap icon-book">
+                <i data-lucide="book-open"></i>
+              </div>
+              <span class="hobby-category">Literasi & Wawasan</span>
+              <h3 class="hobby-title">Membaca Buku</h3>
+              <p class="hobby-description">
+                Membaca adalah jendela eksplorasi ilmu pengetahuan. Menggali buku-buku sains alam, fisiologi tubuh manusia, biografi tokoh inspiratif, dan buku pengembangan karakter.
+              </p>
+
+              <div class="hobby-tags">
+                <span class="tag"><i data-lucide="check"></i> Biologi & Anatomi</span>
+                <span class="tag"><i data-lucide="check"></i> Sains Populer</span>
+                <span class="tag"><i data-lucide="check"></i> Pengembangan Diri</span>
+              </div>
+
+              <div class="hobby-footer">
+                <div class="hobby-metric">
+                  <span class="metric-num">Kritis</span>
+                  <span class="metric-label">Pola Pikir</span>
+                </div>
+                <div class="hobby-metric">
+                  <span class="metric-num">Luas</span>
+                  <span class="metric-label">Kosakata & Wawasan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Coding & Pemrograman -->
+          <div class="hobby-card tilt-card reveal-up delay-1">
+            <div class="hobby-card-inner">
+              <div class="hobby-icon-wrap icon-code">
+                <i data-lucide="code-2"></i>
+              </div>
+              <span class="hobby-category">Teknologi & Solusi</span>
+              <h3 class="hobby-title">Coding & Web Dev</h3>
+              <p class="hobby-description">
+                Mengeksplorasi kode pemrograman untuk melatih <em>computational thinking</em>, membuat antarmuka web yang bersih, interaktif, dan memahami arsitektur digital masa kini.
+              </p>
+
+              <div class="hobby-tags">
+                <span class="tag"><i data-lucide="check"></i> HTML5 & Semantic Web</span>
+                <span class="tag"><i data-lucide="check"></i> Modern CSS & Styling</span>
+                <span class="tag"><i data-lucide="check"></i> JavaScript Interaktif</span>
+              </div>
+
+              <div class="hobby-footer">
+                <div class="hobby-metric">
+                  <span class="metric-num">Logis</span>
+                  <span class="metric-label">Struktur Berpikir</span>
+                </div>
+                <div class="hobby-metric">
+                  <span class="metric-num">Kreatif</span>
+                  <span class="metric-label">Pemecahan Masalah</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Matematika -->
+          <div class="hobby-card tilt-card reveal-up delay-2">
+            <div class="hobby-card-inner">
+              <div class="hobby-icon-wrap icon-math">
+                <i data-lucide="calculator"></i>
+              </div>
+              <span class="hobby-category">Analisis & Logika</span>
+              <h3 class="hobby-title">Matematika</h3>
+              <p class="hobby-description">
+                Menyukai tantangan logika matematika, aljabar, dan statistika. Matematika melatih ketelitian tinggi, kesabaran, dan kemampuan menganalisis data secara sistematis.
+              </p>
+
+              <div class="hobby-tags">
+                <span class="tag"><i data-lucide="check"></i> Aljabar & Geometri</span>
+                <span class="tag"><i data-lucide="check"></i> Statistika & Probabilitas</span>
+                <span class="tag"><i data-lucide="check"></i> Penalaran Kuantitatif</span>
+              </div>
+
+              <div class="hobby-footer">
+                <div class="hobby-metric">
+                  <span class="metric-num">Presisi</span>
+                  <span class="metric-label">Tingkat Akurasi</span>
+                </div>
+                <div class="hobby-metric">
+                  <span class="metric-num">Sistematis</span>
+                  <span class="metric-label">Metode Solusi</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aspirations / Cita-Cita Section -->
+    <section class="section aspirations-section" id="aspirations">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="section-tag">
+            <i data-lucide="target"></i>
+            <span>Masa Depan & Impian</span>
+          </div>
+          <h2 class="section-title">Cita-Cita: <span class="gradient-text">Menjadi Dokter</span></h2>
+          <p class="section-subtitle">
+            Panggilan jiwa untuk mendedikasikan hidup dalam menyelamatkan nyawa dan meningkatkan kualitas kesehatan masyarakat.
+          </p>
+        </div>
+
+        <div class="doctor-vision-card reveal-up">
+          <div class="vision-header">
+            <div class="vision-badge">
+              <i data-lucide="stethoscope"></i>
+              <span>Visi Karir Medis</span>
+            </div>
+            <h3 class="vision-title">"Memberikan Pelayanan Medis dengan Ketelitian Ilmiah dan Kehangatan Hati"</h3>
+          </div>
+
+          <div class="vision-content-grid">
+            <div class="vision-text-block">
+              <p>
+                Menjadi seorang dokter bukan sekadar profesi bagi saya, melainkan sebuah amanah kemanusiaan. Dengan bekal ketertarikan pada sains, ketekunan belajar di SMAN 1 Cimalaka, serta kecintaan pada analisis logika, saya bertekad menempuh pendidikan kedokteran untuk menjadi klinisi yang kompeten, beretika luhur, dan selalu tanggap terhadap kebutuhan pasien.
+              </p>
+              
+              <div class="doctor-values">
+                <div class="doc-value-item">
+                  <div class="doc-val-icon"><i data-lucide="shield-plus"></i></div>
+                  <div>
+                    <h5>Pelayanan Prima</h5>
+                    <p>Mengutamakan keselamatan dan kesembuhan pasien dengan standar medis terbaik.</p>
+                  </div>
+                </div>
+                <div class="doc-value-item">
+                  <div class="doc-val-icon"><i data-lucide="sparkles"></i></div>
+                  <div>
+                    <h5>Integrasi Teknologi Medis</h5>
+                    <p>Memanfaatkan wawasan coding & data untuk mendukung diagnostik digital yang lebih cepat.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="vision-quote-box">
+              <div class="quote-symbol">“</div>
+              <p class="quote-body">
+                Sains kedokteran menyembuhkan raga, ketulusan empati menenangkan jiwa, dan ketekunan belajar menyempurnakan ikhtiar.
+              </p>
+              <div class="quote-author">
+                <strong>Desvania Nur Asyifa</strong>
+                <span>Calon Dokter Masa Depan</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Roadmap Timeline -->
+          <div class="roadmap-container">
+            <h4 class="roadmap-heading">Peta Jalan Menuju Dokter (Medical Journey Roadmap)</h4>
+            
+            <div class="timeline-steps">
+              <div class="step-card active-step">
+                <div class="step-badge">Fase 1 (Saat Ini)</div>
+                <div class="step-dot"></div>
+                <h5 class="step-title">SMAN 1 Cimalaka</h5>
+                <p class="step-desc">Fokus penguatan nilai akademik IPA (Biologi, Kimia, Matematika), asah literasi & karakter kepemimpinan.</p>
+              </div>
+
+              <div class="step-card">
+                <div class="step-badge">Fase 2</div>
+                <div class="step-dot"></div>
+                <h5 class="step-title">Fakultas Kedokteran</h5>
+                <p class="step-desc">Menempuh Sarjana Kedokteran (S.Ked), mempelajari anatomi, fisiologi, farmakologi, dan patologi klinik.</p>
+              </div>
+
+              <div class="step-card">
+                <div class="step-badge">Fase 3</div>
+                <div class="step-dot"></div>
+                <h5 class="step-title">Profesi Dokter (Koas)</h5>
+                <p class="step-desc">Praktik klinis stase di rumah sakit pendidikan, rotasi di berbagai departemen medis secara langsung.</p>
+              </div>
+
+              <div class="step-card">
+                <div class="step-badge">Fase 4</div>
+                <div class="step-dot"></div>
+                <h5 class="step-title">Dokter & Spesialisasi</h5>
+                <p class="step-desc">Lulus uji kompetensi dokter (UKMPPD), internship, pengabdian masyarakat, serta melanjutkan pendidikan spesialis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Zone Section -->
+    <section class="section interactive-section" id="interactive">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="section-tag">
+            <i data-lucide="gamepad-2"></i>
+            <span>Eksplorasi Berbasis JavaScript</span>
+          </div>
+          <h2 class="section-title">Zona <span class="gradient-text">Interaktif & Mini Widget</span></h2>
+          <p class="section-subtitle">
+            Coba langsung widget interaktif yang mencerminkan hobi matematika, coding, dan dunia kesehatan medis!
+          </p>
+        </div>
+
+        <!-- Interactive Tab Controls -->
+        <div class="interactive-tabs-container reveal-up">
+          <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="math-tab">
+              <i data-lucide="binary"></i>
+              <span>Tantangan Matematika</span>
+            </button>
+            <button class="tab-btn" data-tab="health-tab">
+              <i data-lucide="activity"></i>
+              <span>Kalkulator Sehat (BMI)</span>
+            </button>
+            <button class="tab-btn" data-tab="quote-tab">
+              <i data-lucide="quote"></i>
+              <span>Inspirasi & Motivasi</span>
+            </button>
+          </div>
+
+          <!-- Tab 1: Math Quiz Widget -->
+          <div class="tab-pane active" id="math-tab">
+            <div class="interactive-box">
+              <div class="box-header">
+                <div>
+                  <h4 class="box-title">📐 Kuis Kilat Logika Matematika</h4>
+                  <p class="box-sub">Uji kecepatan berhitung & logika Anda bersama Desvania!</p>
+                </div>
+                <div class="score-display">
+                  <span>Skor:</span>
+                  <strong id="math-score">0</strong>
+                </div>
+              </div>
+
+              <div class="quiz-body">
+                <div class="question-container">
+                  <span class="question-label">Soal Matematika:</span>
+                  <div class="math-question" id="math-question">Memuat soal...</div>
+                </div>
+
+                <div class="options-grid" id="math-options">
+                  <!-- Options injected via JavaScript -->
+                </div>
+
+                <div class="quiz-feedback" id="math-feedback"></div>
+
+                <div class="quiz-actions">
+                  <button class="btn btn-primary btn-sm" id="btn-next-question">
+                    <i data-lucide="refresh-cw"></i>
+                    <span>Soal Baru</span>
+                  </button>
+                  <button class="btn btn-outline btn-sm" id="btn-reset-math">
+                    <span>Reset Skor</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Health Calculator Widget (Doctor Aspiration) -->
+          <div class="tab-pane" id="health-tab">
+            <div class="interactive-box">
+              <div class="box-header">
+                <div>
+                  <h4 class="box-title">🩺 Cek Status Indeks Massa Tubuh (BMI)</h4>
+                  <p class="box-sub">Simulasi mini aplikasi skrining kesehatan awal buatan Desvania.</p>
+                </div>
+              </div>
+
+              <div class="calc-body">
+                <div class="calc-inputs-grid">
+                  <div class="form-group">
+                    <label for="bmi-weight">Berat Badan (kg)</label>
+                    <input type="number" id="bmi-weight" placeholder="Contoh: 50" min="20" max="200">
+                  </div>
+                  <div class="form-group">
+                    <label for="bmi-height">Tinggi Badan (cm)</label>
+                    <input type="number" id="bmi-height" placeholder="Contoh: 160" min="50" max="250">
+                  </div>
+                </div>
+
+                <button class="btn btn-primary" id="btn-calc-bmi" style="width: 100%; margin-top: 1rem;">
+                  <i data-lucide="calculator"></i>
+                  <span>Hitung Status Kesehatan</span>
+                </button>
+
+                <div class="bmi-result-card" id="bmi-result-card" style="display: none;">
+                  <div class="bmi-val-wrap">
+                    <span class="bmi-number" id="bmi-number">21.5</span>
+                    <span class="bmi-category-badge" id="bmi-category">Normal (Sehat)</span>
+                  </div>
+                  <p class="bmi-advice" id="bmi-advice">Berat badan Anda berada dalam kategori ideal.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 3: Quote Generator Widget -->
+          <div class="tab-pane" id="quote-tab">
+            <div class="interactive-box">
+              <div class="box-header">
+                <div>
+                  <h4 class="box-title">📖 Generator Kutipan Dokter & Sains</h4>
+                  <p class="box-sub">Petikan inspiratif tentang ilmu, kesehatan, dan dedikasi.</p>
+                </div>
+              </div>
+
+              <div class="quote-display-area">
+                <div class="quote-icon-large">“</div>
+                <blockquote id="dynamic-quote">
+                  "Di mana pun seni pengobatan dicintai, di situ juga ada cinta terhadap kemanusiaan."
+                </blockquote>
+                <cite id="dynamic-author">— Hippocrates (Bapak Kedokteran)</cite>
+
+                <div class="quote-btn-wrap">
+                  <button class="btn btn-primary" id="btn-new-quote">
+                    <i data-lucide="sparkles"></i>
+                    <span>Kutipan Baru</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Message Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="section-tag">
+            <i data-lucide="mail"></i>
+            <span>Terhubung Bersama</span>
+          </div>
+          <h2 class="section-title">Kirim Pesan & <span class="gradient-text">Dukungan</span></h2>
+          <p class="section-subtitle">
+            Punya saran, diskusi tentang matematika, coding, atau ingin memberikan semangat untuk meraih cita-cita dokter? Silakan sampaikan pesan Anda!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details -->
+          <div class="contact-info-card reveal-up">
+            <h3 class="contact-card-title">Informasi & Lokasi</h3>
+            <p class="contact-card-desc">
+              Selalu terbuka untuk berdiskusi, berkolaborasi dalam projek sains/coding, dan berbagi ilmu pengetahuan.
+            </p>
+
+            <div class="contact-channels">
+              <div class="channel-item">
+                <div class="channel-icon"><i data-lucide="map-pin"></i></div>
+                <div>
+                  <span class="channel-lbl">Sekolah</span>
+                  <strong class="channel-val">SMAN 1 Cimalaka, Sumedang, Jawa Barat</strong>
+                </div>
+              </div>
+              <div class="channel-item">
+                <div class="channel-icon"><i data-lucide="mail"></i></div>
+                <div>
+                  <span class="channel-lbl">Status</span>
+                  <strong class="channel-val">Siswa Aktif & Calon Mahasiswa Kedokteran</strong>
+                </div>
+              </div>
+              <div class="channel-item">
+                <div class="channel-icon"><i data-lucide="sparkles"></i></div>
+                <div>
+                  <span class="channel-lbl">Minat Diskusi</span>
+                  <strong class="channel-val">Biologi Medis, Matematika, Web Development</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media Pills -->
+            <div class="social-links-wrap">
+              <span class="social-title">Hubungi Media Sosial:</span>
+              <div class="social-pills">
+                <a href="#" class="social-pill" title="Instagram"><i data-lucide="instagram"></i> Instagram</a>
+                <a href="#" class="social-pill" title="GitHub"><i data-lucide="github"></i> GitHub</a>
+                <a href="#" class="social-pill" title="LinkedIn"><i data-lucide="linkedin"></i> LinkedIn</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Message Form -->
+          <div class="contact-form-card reveal-up delay-1">
+            <form id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="sender-name">Nama Anda *</label>
+                  <input type="text" id="sender-name" placeholder="Masukkan nama Anda" required>
+                </div>
+                <div class="form-group">
+                  <label for="sender-email">Email Anda *</label>
+                  <input type="email" id="sender-email" placeholder="nama@email.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message-topic">Topik Pesan</label>
+                <select id="message-topic">
+                  <option value="Dukungan Cita-cita Dokter">🩺 Dukungan Menuju Cita-Cita Dokter</option>
+                  <option value="Diskusi Matematika">📐 Diskusi Soal / Logika Matematika</option>
+                  <option value="Diskusi Coding & Web">💻 Diskusi Coding & Teknologi Web</option>
+                  <option value="Salam & Kolaborasi">👋 Salam Kenal / Seputar SMAN 1 Cimalaka</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-message">Pesan / Doa & Dukungan *</label>
+                <textarea id="sender-message" rows="4" placeholder="Tuliskan pesan atau doa terbaik untuk Desvania..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="btn-submit-form" style="width: 100%;">
+                <i data-lucide="send"></i>
+                <span>Kirim Pesan Dukungan</span>
+              </button>
+            </form>
+
+            <div class="form-toast" id="form-toast">
+              <i data-lucide="check-circle" class="toast-icon"></i>
+              <div>
+                <strong>Terima kasih banyak!</strong>
+                <p>Pesan dan dukungan Anda telah berhasil terkirim.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Clean Minimalist Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-icon sm"><i data-lucide="stethoscope"></i></div>
+          <span>Desvania Nur Asyifa</span>
+        </div>
+        <p class="footer-sub">Siswa SMAN 1 Cimalaka • Calon Dokter Masa Depan</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Beranda</a>
+        <a href="#about">Tentang</a>
+        <a href="#hobbies">Hobi</a>
+        <a href="#aspirations">Cita-Cita</a>
+        <a href="#interactive">Interaktif</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="footer-copy">
+        <p>&copy; 2026 Desvania Nur Asyifa. Dibuat dengan HTML, CSS & JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Kembali ke atas">
+    <i data-lucide="chevron-up"></i>
+  </button>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
+
